@@ -46,16 +46,28 @@
         align-items: center;
         gap: 20px;
 
-        font-family: vars.$s;
-        font-size: 18px;
-        line-height: 27px;
-        color: vars.$white;
+
+        &:hover .lights-links-icon {
+            width: 260px;
+        }
+
+        >p {
+            font-family: vars.$s;
+            font-size: 18px;
+            line-height: 27px;
+            color: vars.$white;
+            z-index: 2;
+            margin-left: 50px;
+        }
 
         &-icon {
             width: 30px;
             height: 30px;
             @include mix.border-min;
             background-color: vars.$pink;
+            position: absolute;
+            transition: width 1s cubic-bezier(0.39, 0.58, 0.57, 1);
+
         }
     }
 }
