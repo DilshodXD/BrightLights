@@ -1,0 +1,109 @@
+@use '../abstract/variables'as vars;
+
+.nav {
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 56px;
+    }
+
+    &__item {
+        list-style: none;
+    }
+
+    &__link {
+        font-family: vars.$s;
+        font-size: 18px;
+        line-height: 27px;
+        color: vars.$white;
+        letter-spacing: .5px;
+        position: relative;
+
+        &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            background-color: vars.$pink;
+            height: 3px;
+            width: 100%;
+            transition: .2s;
+            opacity: 0;
+        }
+
+        &:hover:after {
+            opacity: 1;
+            bottom: -4px;
+        }
+    }
+}
+
+.player {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 45px;
+
+    &__btn {
+        background-color: transparent;
+        background-size: cover;
+        border: 0 none;
+        width: 23px;
+        height: 25px;
+        background: url(../img/play.png) center;
+    }
+
+    &__bar {
+        width: 100%;
+        height: 2px;
+        background-color: vars.$white;
+        position: relative;
+        overflow: hidden;
+
+        &-inner {
+            background-color: vars.$pink;
+            width: 0%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    &__timer {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+
+        >p {
+            font-family: vars.$r;
+            font-size: 18px;
+            line-height: 27px;
+            color: vars.$white;
+        }
+    }
+}
+
+.song {
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__item {
+        cursor: pointer;
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+    &-active .song__text{
+        color: vars.$pink;
+    }
+    &__text {
+        font-family: vars.$m;
+        font-size: 18px;
+        line-height: 27px;
+        color: vars.$white;
+    }
+}

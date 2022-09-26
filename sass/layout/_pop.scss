@@ -1,0 +1,41 @@
+@use '../abstract/variables'as vars;
+@use '../abstract/mixins'as mix;
+
+.pop {
+    padding-bottom: calc(80px + 180px) ;
+    &__inner {
+        @include mix.border-max;
+        padding: 50px 80px;
+        border: 1px solid vars.$white;
+        position: relative;
+    }
+
+    &__text {
+        width: 520px;
+        font-family: vars.$m;
+        font-size: 18px;
+        line-height: 27px;
+        color: vars.$white;
+        margin-bottom: 25px;
+    }
+
+    &__line {
+        width: 520px;
+        height: 2px;
+        background-color: vars.$white;
+        margin-bottom: 25px;
+    }
+
+    &__link {
+        font-family: vars.$b;
+        font-size: 18px;
+        line-height: 27px;
+        color: vars.$pink;
+    }
+    &__img{
+        position: absolute;
+        @include mix.border-max;
+        right: 80px;
+        top: -90px;
+    }
+}

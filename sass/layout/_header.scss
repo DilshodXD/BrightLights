@@ -1,0 +1,46 @@
+@use '../abstract/variables'as vars;
+
+.header {
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+
+    &__top {
+        padding-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 65px;
+    }
+
+    &__bottom {
+        &-name {
+            font-family: vars.$b;
+            font-size: 48px;
+            line-height: 72px;
+            color: vars.$white;
+            margin-top: 320px;
+        }
+
+        &-music {
+            font-family: vars.$b;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 100px;
+            line-height: 150px;
+            color: transparent;
+            -webkit-text-stroke: .5px #FFFFFF;
+            margin-top: 10px;
+        }
+
+        .player {
+            width: 100%;
+            margin-top: 50px;
+            padding-bottom: 280px;
+        }
+    }
+}
+
+
+.active {
+    background-image: url(../img/pause.png) !important;
+}

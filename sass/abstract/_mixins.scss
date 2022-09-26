@@ -1,0 +1,16 @@
+@use 'variables' as var;
+
+@mixin border-min {
+    border-radius: 10px 0px;
+}
+
+@mixin border-average {
+    color: var.$white;
+    border-radius: 20px 0px;
+}
+
+@mixin border-max {
+    color: var.$white;
+    border-radius: 30px 0px;
+}
+

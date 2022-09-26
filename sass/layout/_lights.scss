@@ -1,0 +1,61 @@
+@use '../abstract/variables'as vars;
+@use '../abstract/mixins'as mix;
+
+.lights {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 150px;
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+
+        &-title {
+            >img {
+                margin-right: 30px;
+            }
+
+            font-family: vars.$b;
+            font-size: 48px;
+            line-height: 72px;
+            color: vars.$white;
+        }
+
+        &-text {
+            font-family: vars.$m;
+            font-size: 16px;
+            line-height: 24px;
+            color: #{vars.$white}70;
+            width: 540px;
+        }
+
+        &-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px 40px;
+            width: 540px;
+        }
+    }
+
+    &-links {
+        width: 250px;
+
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        font-family: vars.$s;
+        font-size: 18px;
+        line-height: 27px;
+        color: vars.$white;
+
+        &-icon {
+            width: 30px;
+            height: 30px;
+            @include mix.border-min;
+            background-color: vars.$pink;
+        }
+    }
+}
