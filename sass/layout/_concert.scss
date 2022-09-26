@@ -1,0 +1,69 @@
+@use '../abstract/variables'as vars;
+@use '../abstract/mixins'as mix;
+
+.concert {
+    padding-bottom: 180px;
+
+    &__infos {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    &__info {
+        @include mix.border-max;
+        background-color: vars.$bg-box;
+
+        &-img {
+            @include mix.border-max;
+            margin-bottom: 30px;
+        }
+
+        &-name {
+            font-family: vars.$b;
+            font-size: 18px;
+            line-height: 27px;
+            color: vars.$white;
+            opacity: 0.5;
+            margin-bottom: 20px;
+            margin-left: 35px;
+        }
+
+        &-location {
+            font-family: vars.$r;
+            font-size: 18px;
+            line-height: 27px;
+            color: vars.$white;
+            margin-bottom: 30px;
+            margin-left: 35px;
+        }
+    }
+
+    &__ticket {
+        margin-left: 35px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-date {
+            font-family: vars.$b;
+            font-size: 16px;
+            line-height: 24px;
+            text-transform: uppercase;
+            color: vars.$white;
+            opacity: 0.5;
+        }
+
+        &-buy {
+            @include mix.border-max;
+            background-color: vars.$pink;
+            font-family: vars.$b;
+            font-size: 16px;
+            line-height: 24px;
+            text-transform: uppercase;
+            padding: 18px 52px;
+        }
+    }
+}

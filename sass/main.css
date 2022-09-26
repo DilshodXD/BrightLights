@@ -392,6 +392,67 @@ a {
   grid-row-end: 3;
 }
 
+.concert {
+  padding-bottom: 180px;
+}
+.concert__infos {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
+}
+.concert__info {
+  color: #ffffff;
+  border-radius: 30px 0px;
+  background-color: #2F2B2B;
+}
+.concert__info-img {
+  color: #ffffff;
+  border-radius: 30px 0px;
+  margin-bottom: 30px;
+}
+.concert__info-name {
+  font-family: "Bold";
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+  opacity: 0.5;
+  margin-bottom: 20px;
+  margin-left: 35px;
+}
+.concert__info-location {
+  font-family: "Regular";
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  margin-left: 35px;
+}
+.concert__ticket {
+  margin-left: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.concert__ticket-date {
+  font-family: "Bold";
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #ffffff;
+  opacity: 0.5;
+}
+.concert__ticket-buy {
+  color: #ffffff;
+  border-radius: 30px 0px;
+  background-color: #7A66CC;
+  font-family: "Bold";
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  padding: 18px 52px;
+}
+
 .footer {
   background-color: #1C1B21;
   padding-bottom: 40px;
