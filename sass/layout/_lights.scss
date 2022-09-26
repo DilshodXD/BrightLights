@@ -66,8 +66,7 @@
             @include mix.border-min;
             background-color: vars.$pink;
             position: absolute;
-            transition: width 1s cubic-bezier(0.39, 0.58, 0.57, 1);
-
+            transition: width .4s cubic-bezier(0.39, 0.58, 0.57, 1);
         }
     }
 }
